@@ -15,11 +15,15 @@ public class ControlFlowExercises {
 //            System.out.println(i);
 //            i -= 5;
 //        } while (i >= -10);
-        int i = 2;
-        do {
-            System.out.println(i * i);
-            i++;
-        } while (i * i < 1000000);
+//        int i = 2;
+//        do {
+//            System.out.println(i * i);
+//            i++;
+//        } while (i * i < 1000000);
+
+        for (int i = 5; i <= 15; i++) {
+            System.out.print(i + " ");
+        }
 
     }
 }
