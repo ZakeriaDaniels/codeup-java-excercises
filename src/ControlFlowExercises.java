@@ -50,6 +50,46 @@ public class ControlFlowExercises {
                 System.out.println(i);
             }
         }
+        Scanner input = new Scanner(System.in);
+        int num;
+
+        do {
+            System.out.print("Enter an integer: ");
+            num = input.nextInt();
+
+            System.out.println("Number  Square  Cube");
+            System.out.println("------  ------  ----");
+
+            for (int i = 1; i <= num; i++) {
+                int square = i * i;
+                int cube = i * i * i;
+                System.out.println(i + "\t" + square + "\t" + cube);
+            }
+
+            System.out.print("Do you want to continue? (y/n): ");
+        } while (input.next().equalsIgnoreCase("y"));
+
+//        number 4
+        int grade;
+
+        do {
+            System.out.print("Enter a numerical grade (0-100): ");
+            grade = input.nextInt();
+
+            if (grade >= 88 && grade <= 100) {
+                System.out.println("Letter grade: A");
+            } else if (grade >= 80 && grade <= 87) {
+                System.out.println("Letter grade: B");
+            } else if (grade >= 67 && grade <= 79) {
+                System.out.println("Letter grade: C");
+            } else if (grade >= 60 && grade <= 66) {
+                System.out.println("Letter grade: D");
+            } else {
+                System.out.println("Letter grade: F");
+            }
+            System.out.print("Do you want to continue? (y/n): ");
+        } while (input.next().equalsIgnoreCase("y"));
 
     }
+
 }
