@@ -18,14 +18,7 @@ public class Person {
 
     public void sayHello() {
 //TODO: print a message to the console using the person's name
-        System.out.println("Hello, my name is " + name);
-    }
-    public static void main(String[] args) {
-        Person person = new Person("Alice");
-        System.out.println("Person's name is " + person.getName());
-        person.setName("bob");
-        System.out.println("Person's name is " + person.getName());
-        person.sayHello();
+        System.out.println("Hello, my name is %s" + this.name);
     }
 
 
